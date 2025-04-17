@@ -418,7 +418,7 @@ body {
 .contact__input {
   border: none;
   outline: none;
-  color: var(--color-text);
+  color: ;
   border-bottom: 0.1rem solid var(--color-input-border);
   flex: 1;
   background: transparent;
