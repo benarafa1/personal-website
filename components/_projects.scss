@@ -1,0 +1,33 @@
+.projects__main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 7.5rem;
+}
+.projects__name {
+  font-size: var(--font-size-38);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 2.5rem;
+}
+.projects__description {
+  font-size: var(--font-weight-medium);
+  margin-bottom: 2.3rem;
+}
+.projects__img {
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+}
+.projects__link {
+  font-weight: var(--font-weight-medium);
+  color: var(--color-darker-blue);
+}
+.projects__link::after {
+  content: "";
+  display: inline-block;
+  width: 1.6rem;
+  height: 1.6rem;
+  background-image: url(images/external-icon.png);
+  background-size: contain;
+  vertical-align: middle;
+  margin-inline-start: 0.3rem;
+}

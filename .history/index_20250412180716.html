@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Amar Arafa</title>
+  </head>
+
+  <body>
+    <video class="bg-video" autoplay loop>
+      <source src="video-loop.mp4" type="video/mp4" />
+    </video>
+    <div class="container">
+      <header class="header">
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li><a class="navigation__link" href="#">Bio</a></li>
+            <li><a class="navigation__link" href="#">Skills</a></li>
+            <li><a class="navigation__link" href="#">Media</a></li>
+            <li><a class="navigation__link" href="#">Projects</a></li>
+            <li><a class="navigation__link" href="#">My Clients</a></li>
+            <li><a class="navigation__link" href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="toggle">
+          <h3 class="toggle__title">Switch Theme</h3>
+          <input
+            type="checkbox"
+            name="toggle__checkbox"
+            id="checkbox"
+            class="toggle__checkbox"
+          />
+          <label for="checkbox" class="toggle__label"></label>
+        </div>
+      </header>
+      <section class="bio section">
+        <div class="bio__data-part">
+          <h1 class="bio__heading">
+            Hi There, I’M A Passionate Software Engineer
+          </h1>
+          <p class="bio__objective">
+            My name is <span class="bio__name">Amar Arafa</span>, a Student at
+            <a href="" class="bio__Almdrasa">Almdrasa.com</a> and a content
+            creator who publish content on
+            <a href="#" class="bio__Facebook">Facebook</a>,
+            <a href="#" class="bio__Twitter">Twitter</a>,
+            <a href="#" class="bio__LinkedIn">LinkedIn</a> and
+            <a href="#" class="bio__Youtube">Youtube</a>.
+          </p>
+          <a href="#" class="bio__links say-hi-link">Say Hi</a>
+          <a href="#" class="bio__links download-cv-link"
+            >Download CV <span class="bio__arrow">↓</span></a
+          >
+        </div>
+        <div class="bio__pic-part">
+          <img
+            src="images/personal-pic.jpg"
+            alt="img of amar"
+            class="bio__pic"
+          />
+        </div>
+      </section>
+      <section class="skills section section-with-bg">
+        <h2 class="h2__heading">Skills</h2>
+        <div class="skills__languages">
+          <div class="skills__item">
+            <p class="language">HTML</p>
+            <p class="experience">8 years</p>
+          </div>
+          <div class="skills__item">
+            <p class="language">CSS</p>
+            <p class="experience">8 years</p>
+          </div>
+          <div class="skills__item">
+            <p class="language">Javascript</p>
+            <p class="experience">8 years</p>
+          </div>
+          <div class="skills__item">
+            <p class="language">React</p>
+            <p class="experience">4 years</p>
+          </div>
+          <div class="skills__item">
+            <p class="language">Redux</p>
+            <p class="experience">3 years</p>
+          </div>
+          <div class="skills__item">
+            <p class="language">React testing library</p>
+            <p class="experience">1 year</p>
+          </div>
+        </div>
+      </section>
+      <section id="media" class="media section">
+        <video class="media__video" poster="images/thumbnail.jpg" controls>
+          <source src="video.mp4" type="video/mp4" />
+        </video>
+      </section>
+    </div>
+  </body>
+</html>

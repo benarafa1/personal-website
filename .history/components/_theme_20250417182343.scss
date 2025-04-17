@@ -1,0 +1,21 @@
+html:has(.toggle__checkbox:checked) {
+  --color-background: var(--color-black);
+  --color-text: var(--color-white);
+  --color-box-img: var(--color-white);
+  --color-link-bg: var(--color-white);
+  --color-grey: #080808;
+  --color-purple: hsl(261, 93%, 70%);
+  --color-input-border: var(--color-white);
+}
+html:has(.toggle__checkbox:checked) .say-hi-link,
+html:has(.toggle__checkbox:checked) .contact__submit {
+  color: var(--color-black);
+}
+html:has(.toggle__checkbox:not(:checked)) .say-hi-link,
+html:has(.toggle__checkbox:not(:checked)) .contact__submit {
+  color: var(--color-white);
+}
+html:has(.toggle__checkbox:checked) .filter-white {
+  filter: invert(100%) sepia(2%) saturate(243%) hue-rotate(37deg)
+    brightness(119%) contrast(100%);
+}

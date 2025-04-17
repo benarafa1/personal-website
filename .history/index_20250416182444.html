@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Amar Arafa</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <video class="bg-video" autoplay loop muted>
+        <source src="video-loop.mp4" type="video/mp4" />
+      </video>
+      <header class="header">
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li><a class="navigation__link" href="#">Bio</a></li>
+            <li><a class="navigation__link" href="#">Skills</a></li>
+            <li><a class="navigation__link" href="#">Media</a></li>
+            <li><a class="navigation__link" href="#">Projects</a></li>
+            <li><a class="navigation__link" href="#">My Clients</a></li>
+            <li><a class="navigation__link" href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="toggle">
+          <h3 class="toggle__title">Switch Theme</h3>
+          <input
+            type="checkbox"
+            name="toggle__checkbox"
+            id="checkbox"
+            class="toggle__checkbox"
+          />
+          <label for="checkbox" class="toggle__label"></label>
+        </div>
+      </header>
+      <section class="bio section">
+        <div class="bio__data-part">
+          <h1 class="bio__heading">
+            Hi There, I’M A Passionate Software Engineer
+          </h1>
+          <p class="bio__objective">
+            My name is <span class="bio__name">Amar Arafa</span>, a Student at
+            <a href="#" class="bio__Almdrasa">Almdrasa.com</a> and a content
+            creator who publish content on
+            <a href="#" class="bio__Facebook">Facebook</a>,
+            <a href="#" class="bio__Twitter">Twitter</a>,
+            <a href="#" class="bio__LinkedIn">LinkedIn</a> and
+            <a href="#" class="bio__Youtube">Youtube</a>.
+          </p>
+          <a href="#" class="bio__links say-hi-link">Say Hi</a>
+          <a href="#" class="bio__links download-cv-link"
+            >Download CV <span class="bio__arrow">↓</span></a
+          >
+        </div>
+        <div class="bio__pic-part">
+          <img
+            src="images/personal-pic.jpg"
+            alt="img of amar"
+            class="bio__pic"
+          />
+        </div>
+      </section>
+      <section class="skills section section-with-bg">
+        <h2 class="h2__heading">Skills</h2>
+        <div class="skills__languages">
+          <div class="skills__item">
+            <p class="language">HTML</p>
+            <p class="experience">8 years</p>
+          </div>
+          <div class="skills__item">
+            <p class="language">CSS</p>
+            <p class="experience">8 years</p>
+          </div>
+          <div class="skills__item">
+            <p class="language">Javascript</p>
+            <p class="experience">8 years</p>
+          </div>
+          <div class="skills__item">
+            <p class="language">React</p>
+            <p class="experience">4 years</p>
+          </div>
+          <div class="skills__item">
+            <p class="language">Redux</p>
+            <p class="experience">3 years</p>
+          </div>
+          <div class="skills__item">
+            <p class="language">React testing library</p>
+            <p class="experience">1 year</p>
+          </div>
+        </div>
+      </section>
+      <section id="media" class="media section">
+        <video class="media__video" poster="images/thumbnail.jpg" controls>
+          <source src="video.mp4" type="video/mp4" />
+        </video>
+      </section>
+      <section id="projects" class="projects section">
+        <h2 class="h2__heading">MY FEATURED <br />PROJECTS</h2>
+        <div class="projects__main">
+          <img
+            class="projects__img"
+            src="images/project-1.jpg"
+            alt="img for quran tab extension"
+          />
+
+          <div class="prject-data">
+            <h3 class="projects__name">Quran Tab <br />Extension</h3>
+            <p class="projects__description">
+              Quran Tab is an Islamic new tab page that will keep you inspired
+              by a verse from the Quran every time you open a new tab that helps
+              you achieve your "Khatma" and keeps you connected with the words
+              of Allah.
+            </p>
+            <a
+              class="projects__link"
+              href="https://bit.ly/qt-chrome"
+              target="_blank"
+              >Chrome Link</a
+            >
+            <span>-</span>
+            <a
+              class="projects__link"
+              href="https://bit.ly/qt-edge"
+              target="_blank"
+              >Edge Link</a
+            >
+          </div>
+
+          <div class="project-data">
+            <h3 class="projects__name">
+              Quran Station <br />
+              Extension
+            </h3>
+            <p class="projects__description">
+              Small extension that gives you access to over 100 stations to help
+              you listen to the Quran from your favorite reciters easily
+              Quran-Station has over 100 stations to help you listen to the
+              Quran from your favorite reciters in a quick and easy way.
+            </p>
+            <a
+              class="projects__link"
+              href="https://bit.ly/qs-chrome"
+              target="_blank"
+              >Chrome Link</a
+            >
+            <span>-</span>
+            <a
+              class="projects__link"
+              href="https://bit.ly/qs-firefox"
+              target="_blank"
+              >Firefox Link</a
+            >
+            <span>-</span>
+            <a
+              class="projects__link"
+              href="https://bit.ly/quran-station-edge"
+              target="_blank"
+              >Edge Link</a
+            >
+          </div>
+          <img
+            class="projects__img"
+            src="images/project-2.jpg"
+            alt="img for quran station extension"
+          />
+        </div>
+      </section>
+      <section id="clients" class="clients section section-with-bg">
+        <div class="clients__reviews">
+          <h2 class="h2__heading">What My<br />Clients Say</h2>
+          <div class="clients__wrapper">
+            <p class="clients__review">
+              Abusrea has the advantageous ability to understand a problem and
+              implement code to a high standard within the deadline. Each
+              project we have worked on, I know I can completely trust Abusrea
+              to own his tasks and complete what is needed when asked of him.
+            </p>
+            <p class="clients__review">
+              Each project we have worked on, I know I can completely trust
+              Abusrea to own his tasks and complete what is needed when asked of
+              him. Mohamed will patiently listen to you and give you his own
+              Ideas as well, and in the end, he comes up with something
+              completely different from what you’re expecting, but the good news
+              is, you’ll always love it.
+            </p>
+            <p class="clients__review">
+              I had a chance to work closely with Mohamed as a direct manager
+              from hist first day at DeliveryHero until my last day there
+              (6+months). Mohamed's biggest strengths that I admire are taking
+              initiatives on personal and team level, and driving them.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact section">
+        <div>
+          <p class="contact__description">
+            Feel free to reach out to me any time. I prefer to talk over
+            email,especially since we may be a few time zones away.
+          </p>
+          <a href="mailto:example@gmail.com" class="contact__email"
+            >example@gmail.com</a
+          >
+          <div>
+            <a href="#" class="contact__socials">
+              <img src="images/brand/facebook.svg" alt="facebook" />
+            </a>
+            <a href="#" class="contact__socials">
+              <img src="images/brand/twitter.svg" alt="twitter" />
+            </a>
+            <a href="#" class="contact__socials">
+              <img src="images/brand/instagram.svg" alt="instagram" />
+            </a>
+            <a href="#" class="contact__socials">
+              <img src="images/brand/github.svg" alt="github" />
+            </a>
+            <a href="#" class="contact__socials">
+              <img src="images/brand/youtube.svg" alt="youtube" />
+            </a>
+            <a href="#" class="contact__socials">
+              <img src="images/brand/LinkedIn.svg" alt="LinkedIn" />
+            </a>
+          </div>
+        </div>
+        <div class="contact__contact-form">
+          <h2 class="h2__heading">
+            Let’s Work <br />
+            Together!
+          </h2>
+          <form action="results.html">
+            <div class="contact__inputs">
+              <input
+                class="contact__input"
+                type="text"
+                placeholder="Full name"
+                required
+              />
+              <input
+                class="contact__input"
+                type="tel"
+                placeholder="Phone No."
+                required
+              />
+            </div>
+            <textarea
+              class="contact__input contact__message"
+              name="message"
+              id="message"
+              rows="1"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <input class="contact__submit" type="submit" value="Send Message" />
+          </form>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

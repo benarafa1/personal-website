@@ -1,0 +1,90 @@
+.header {
+  position: sticky;
+  top: 0;
+  padding: 3rem 0;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  background-color: var(--color-background);
+}
+.header::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+  top: 0;
+  z-index: -1;
+  background-color: var(--color-background);
+  border-bottom: 0.1rem solid var(--color-input-border);
+}
+
+.navigation__list {
+  display: flex;
+  gap: 2rem;
+}
+.navigation__link:link,
+.navigation__link:visited {
+  font-weight: var(--font-weight-medium);
+  text-decoration: none;
+  font-size: 1.7rem;
+}
+.navigation__link:hover,
+.navigation__link:active {
+  text-decoration: underline;
+}
+
+.container:has(#Bio:target) .navigation__Bio,
+.container:has(#Skills:target) .navigation__Skills,
+.container:has(#Media:target) .navigation__Media,
+.container:has(#Projects:target) .navigation__Projects,
+.container:has(#Clients:target) .navigation__Clients,
+.container:has(#Contact:target) .navigation__Contact {
+  color: var(--color-blue);
+}
+.burger-menu__checkbox {
+  display: none;
+}
+
+/* toggle start */
+.toggle {
+  display: flex;
+  gap: 1rem;
+  margin-left: auto;
+}
+.toggle__title {
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-18);
+}
+.toggle__checkbox {
+  display: none;
+}
+
+.toggle__label {
+  display: block;
+  width: 4.5rem;
+  height: 2.2rem;
+  border-radius: 1.5rem;
+  background-color: var(--color-black);
+  cursor: pointer;
+  padding: 0.3rem 0.4rem;
+  transition: var(--transition-timing);
+}
+
+.toggle__label::before {
+  content: "";
+  display: block;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  background-color: var(--color-background);
+  transition: var(--transition-timing);
+}
+
+.toggle__checkbox:checked + .toggle__label {
+  background-color: var(--color-white);
+}
+.toggle__checkbox:checked + .toggle__label::before {
+  background-color: var(--color-black);
+  transform: translateX(2.1rem);
+}
+/* toggle end */

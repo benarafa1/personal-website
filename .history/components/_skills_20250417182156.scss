@@ -1,0 +1,19 @@
+.skills {
+  background-color: var(--color-grey);
+}
+.skills__item {
+  transition: var(--transition-timing);
+  user-select: none;
+}
+.skills__item:hover {
+  text-shadow: 0 0 1px var(--color-purple);
+}
+.skills__languages {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+}
+.language {
+  font-size: var(--font-size-38);
+  font-weight: var(--font-weight-medium);
+}

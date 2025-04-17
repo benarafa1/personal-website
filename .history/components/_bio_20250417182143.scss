@@ -1,0 +1,87 @@
+.bio {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 7.4rem;
+}
+
+.bio__heading {
+  font-family: var(--font-family-Roboto);
+  font-size: var(--font-size-70);
+  font-weight: var(--font-weight-bold);
+}
+.bio__objective {
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-20);
+  margin: 3rem 0 8rem;
+}
+.bio__name {
+  font-weight: var(--font-weight-semi-bold);
+}
+.bio__Almdrasa {
+  color: var(--color-purple);
+}
+.bio__Facebook {
+  color: var(--color-blue);
+}
+.bio__Twitter {
+  color: var(--color-light-blue);
+}
+.bio__LinkedIn {
+  color: var(--color-dark-blue);
+}
+.bio__Youtube {
+  color: var(--color-red);
+}
+.bio__links {
+  font-size: var(--font-size-20);
+  font-weight: var(--font-weight-semi-bold);
+  text-decoration: none;
+}
+.say-hi-link {
+  padding: 0.7rem 4.7rem;
+  background-color: var(--color-link-bg);
+}
+.download-cv-link {
+  margin-inline-start: 0.7rem;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0.5rem);
+  }
+  25% {
+    transform: translateY(-0.5rem);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bio__arrow {
+  display: inline-block;
+  animation: jump 1s ease-in-out infinite alternate;
+}
+
+.bio__pic-part {
+  display: flex;
+  position: relative;
+  align-items: center;
+  align-self: center;
+  justify-self: end;
+}
+.bio__pic-part::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 46rem;
+  width: 100%;
+  border-radius: 1rem;
+  z-index: -1;
+  background-color: var(--color-box-img);
+  box-shadow: 2.17543px 8.7017px 38.0699px rgba(0, 0, 0, 0.416);
+}
+.bio__pic {
+  width: 47rem;
+}
